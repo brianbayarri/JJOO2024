@@ -1,16 +1,15 @@
 package repositories
 
-import data.Ticket
+import data.Event
 
-object TicketRepository {
+object EventRepository {
 
-    private val tickets = mutableListOf<Ticket>()
+    private val events = mutableListOf<Event>()
 
     init {
-        tickets.add(
-            Ticket(
+        events.add(
+            Event(
                 1L,
-                "14A",
                 "2024/07/02",
                 "10:30",
                 "PSG Stadium",
@@ -19,10 +18,9 @@ object TicketRepository {
             )
         )
 
-        tickets.add(
-            Ticket(
+        events.add(
+            Event(
                 2L,
-                "22B",
                 "2024-07-12",
                 "15:00",
                 "Olympic Arena",
@@ -31,10 +29,9 @@ object TicketRepository {
             )
         )
 
-        tickets.add(
-            Ticket(
+        events.add(
+            Event(
                 3L,
-                "10C",
                 "2024-07-25",
                 "18:45",
                 "National Stadium",
@@ -43,10 +40,9 @@ object TicketRepository {
             )
         )
 
-        tickets.add(
-            Ticket(
+        events.add(
+            Event(
                 4L,
-                "5D",
                 "2024-07-30",
                 "12:00",
                 "Main Arena",
@@ -55,10 +51,9 @@ object TicketRepository {
             )
         )
 
-        tickets.add(
-            Ticket(
+        events.add(
+            Event(
                 5L,
-                "8E",
                 "2024-08-01",
                 "20:30",
                 "City Sports Complex",
@@ -67,10 +62,9 @@ object TicketRepository {
             )
         )
 
-        tickets.add(
-            Ticket(
+        events.add(
+            Event(
                 6L,
-                "13F",
                 "2024-08-07",
                 "17:00",
                 "Regional Stadium",
@@ -79,10 +73,9 @@ object TicketRepository {
             )
         )
 
-        tickets.add(
-            Ticket(
+        events.add(
+            Event(
                 7L,
-                "3G",
                 "2024-08-10",
                 "14:00",
                 "Victory Stadium",
@@ -91,10 +84,9 @@ object TicketRepository {
             )
         )
 
-        tickets.add(
-            Ticket(
+        events.add(
+            Event(
                 8L,
-                "6H",
                 "2024-08-15",
                 "16:30",
                 "Championship Arena",
@@ -103,10 +95,9 @@ object TicketRepository {
             )
         )
 
-        tickets.add(
-            Ticket(
+        events.add(
+            Event(
                 9L,
-                "9I",
                 "2024-08-18",
                 "11:15",
                 "International Stadium",
@@ -115,10 +106,9 @@ object TicketRepository {
             )
         )
 
-        tickets.add(
-            Ticket(
+        events.add(
+            Event(
                 10L,
-                "11J",
                 "2024-08-25",
                 "13:45",
                 "Olympic Park",
@@ -130,12 +120,12 @@ object TicketRepository {
 
     }
 
-    fun get() : List<Ticket> {
+    fun get() : List<Event> {
         return emptyList() //TODO Implementar solucion para obtener los tickets
     }
 
-    fun getById(id: Long) : Ticket {
-        return tickets[0] //TODO Implementar solucion para obtener el ticket solicitado
+    fun getById(id: Long) : Event {
+        return events[0] //TODO Implementar solucion para obtener el ticket solicitado
     }
     
 }

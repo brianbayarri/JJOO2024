@@ -1,8 +1,7 @@
 package data
 
-data class Ticket(
+data class Event(
     val id: Long,
-    val seat: String,
     val date: String,
     val hour: String,
     val place: String,
